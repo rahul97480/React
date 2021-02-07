@@ -1,0 +1,7 @@
+import React ,{ Component } from 'react'
+class Welcome extends Component{
+    render(){
+        return <h1>Welcome {this.props.name} and last name is {this.props.lastname}</h1>
+    }
+}
+export default Welcome
