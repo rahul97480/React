@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 //import Greet from './component/greet'
 import Greet from './component/greet'
-import { Children } from 'react';
+import { Children, PureComponent } from 'react';
 //import Hello from './component/hello'
 import Welcome from './component/Welcome'
 import Message from './component/message'
@@ -19,12 +19,18 @@ import styles from './appstyles.module.css'
 import Form from './component/Form'
 import LifeCycle from './component/LifeCycle'
 import Fragment from './component/Fragment'
-import Table from './component/Table';
+import Table from './component/Table'
+import PureComp from './component/PureComp'
+import ParentComp from './component/ParentComp'
+import RefsDemo from './component/RefsDemo';
+import FocusInput from './component/FocusInput';
+import FRPInput from './FRPInput';
 
 function App() {
   return (
     <div className="App">
-      
+     
+      {/*<PureComp />*/}
       {/*<Greet name='bruce' lastname='okhla'/>
       <p>This is Children class</p>
       <Greet name='mohan'lastname='okhla'/>
@@ -48,6 +54,13 @@ function App() {
       <LifeCycle />
       <Fragment />
       <Table />
+      <ParentComp />
+       <ParentComp />
+       <RefsDemo />
+       <FocusInput />
+       <FRPInput />
+      {/*<PureComp />*/}
+      
       {/*<Hello />*/}
     
     </div>
