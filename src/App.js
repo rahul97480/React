@@ -29,7 +29,7 @@ import FRPInput from './FRPInput';
 function App() {
   return (
     <div className="App">
-     
+      <Parentcomponent />
       {/*<PureComp />*/}
       {/*<Greet name='bruce' lastname='okhla'/>
       <p>This is Children class</p>

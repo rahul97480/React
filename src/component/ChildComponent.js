@@ -3,7 +3,7 @@ import React from 'react'
 function ChildComponent(props) {
     return (
         <div>
-            <button onClick={() => props.greetHandler('parameter name as passed')}>Greet parent</button>
+            <button onClick={() => props.greetHandler('xyz')}>Greet parent</button>
         </div>
     )
 }
