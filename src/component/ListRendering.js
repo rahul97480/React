@@ -19,13 +19,12 @@ function ListRendering() {
             skill: 'Laravel'
         }
     ]
-    const personList = persons.map(person =><Person key={person.name} person={person} />)
+    const personList = persons.map(person =><Person key={person.name} person={person} />) // map function to loop over the elements
     
     return (
         <div>
             {
                 <h2>{personList}</h2>
-               // names.map(name =>  <h2>{name}</h2>)
             }
         </div>
     )

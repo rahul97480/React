@@ -1,7 +1,7 @@
 import React ,{ Component } from 'react'
 class Message extends Component{
     constructor(){
-        super()
+        super() //to call the parent component of the react class i.e Component
         this.state = {
             message: 'Welcome Visitor'
         }

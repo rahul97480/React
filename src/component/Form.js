@@ -30,7 +30,7 @@ import React, { Component } from 'react'
          })
      }
      handleSubmit = event => {
-        alert(`${this.state.username} ${this.state.comments} ${this.state.skills}`)
+        alert(`${this.state.username} ${this.state.comments} ${this.state.skills}`) //template literals
      }
      
     render() {

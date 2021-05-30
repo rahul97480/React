@@ -25,44 +25,51 @@ import ParentComp from './component/ParentComp'
 import RefsDemo from './component/RefsDemo';
 import FocusInput from './component/FocusInput';
 import FRPInput from './FRPInput';
+import  CmpDidUpdate from './component/CmpDidUpdate';
+import Scupdate from './component/Scupdate';
+import CwMount from './component/CwMount';
+import CwMounter from './component/CwMounter';
 
 function App() {
   return (
     <div className="App">
-      <Parentcomponent />
       {/*<PureComp />*/}
-      {/*<Greet name='bruce' lastname='okhla'/>
+      {/*<Greet name='bruce' lastname='okhla'/>       //props
       <p>This is Children class</p>
       <Greet name='mohan'lastname='okhla'/>
-      <button>Action</button>
+      <button>Action</button> //buttons
       <Greet name='sohan'lastname='okhla'/>
       <button>Esa</button>
+      <Welcome name='sohan'lastname='okhla'/>         //props
       <Welcome name='sohan'lastname='okhla'/>
-      <Welcome name='sohan'lastname='okhla'/>
-      <Message/>
-      <Counter />
-      <Eventbind />
+      <Message/>                                      //states in class component
+      <Counter />                                     //states in clss component
+      <Eventbind />                                   //event handler
       <FunctionClick />
-      <Parentcomponent />
-      <UserGreeting />
-      <ListRendering />
-      <h1 className="error">Error</h1>
-      <h1 className={styles.success}>Success</h1>
+      <Parentcomponent />                             //this keyword and child component function 
+      <UserGreeting />                                //if else conditional Rendering
+      <ListRendering />                               //map function               
+      <h1 className="error">Error</h1>                //stylesheets
+      <h1 className={styles.success}>Success</h1>     //stylesheets
       <StyleSheet />
       <Inline />
-      <Form />
-      <LifeCycle />
-      <Fragment />
-      <Table />
-      <ParentComp />
+      <Form />                                        //form validation states and all 
+      <LifeCycle />                                   //Lifecycle 
+      <Fragment />                                    //instead of div <> </>
+      <Table />                                         
+      <ParentComp />                                  //Component did Mount  Lifecycle
        <ParentComp />
-       <RefsDemo />
+       <CmpDidUpdate />                               //component did update
+       <Scupdate />                                   //Should component update          
+       <CwMount />                                    //cpomonent will unmount 
+       <RefsDemo />  
+
        <FocusInput />
        <FRPInput />
       {/*<PureComp />*/}
       
       {/*<Hello />*/}
-    
+      
     </div>
   );
 }
