@@ -13,4 +13,5 @@ import React, { PureComponent } from 'react'
 
 export default PureComp
 
-{/* Pure component can give Performace boost by preventing unecesscary re-renders */}
+{/* Pure component can give Performace boost by preventing unecesscary re-renders
+we use pure component only in class component  */}

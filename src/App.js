@@ -3,7 +3,7 @@ import './App.css';
 //import Greet from './component/greet'
 import Greet from './component/greet'
 import { Children, PureComponent } from 'react';
-//import Hello from './component/hello'
+import Hello from './component/hello'
 import Welcome from './component/Welcome'
 import Message from './component/message'
 import Counter from './component/counter'
@@ -29,11 +29,13 @@ import  CmpDidUpdate from './component/CmpDidUpdate';
 import Scupdate from './component/Scupdate';
 import CwMount from './component/CwMount';
 import CwMounter from './component/CwMounter';
+import UseEffect from './component/UseEffect'
+import Array from './component/Array'
+import Memoer from './component/Memoer'
 
 function App() {
   return (
     <div className="App">
-      {/*<PureComp />*/}
       {/*<Greet name='bruce' lastname='okhla'/>       //props
       <p>This is Children class</p>
       <Greet name='mohan'lastname='okhla'/>
@@ -51,8 +53,9 @@ function App() {
       <ListRendering />                               //map function               
       <h1 className="error">Error</h1>                //stylesheets
       <h1 className={styles.success}>Success</h1>     //stylesheets
-      <StyleSheet />
-      <Inline />
+      <StyleSheet />                                  //stylesheets
+      <Inline />                                      //stylesheets
+      <Hello />                                       //if we donot want to use jsx
       <Form />                                        //form validation states and all 
       <LifeCycle />                                   //Lifecycle 
       <Fragment />                                    //instead of div <> </>
@@ -62,13 +65,23 @@ function App() {
        <CmpDidUpdate />                               //component did update
        <Scupdate />                                   //Should component update          
        <CwMount />                                    //cpomonent will unmount 
-       <RefsDemo />  
+       
+       HOOKS 
+       <UseEffect />                                  //useEffect with state and props 
+       <Array />                                      //Tables and data 
+       <ReactFragment />                              //unable to use Div in table then we use React Fragments 
+       <Memoer />                                     //functional Hook call functions only if there is change in that state {increases performance boost}
+
+       <PureComp />                                  //check the chnge state and ten allows to render for class components
+      
+      
+      <RefsDemo />  
 
        <FocusInput />
        <FRPInput />
-      {/*<PureComp />*/}
+      */}
+    
       
-      {/*<Hello />*/}
       
     </div>
   );
