@@ -32,6 +32,10 @@ import CwMounter from './component/CwMounter';
 import UseEffect from './component/UseEffect'
 import Array from './component/Array'
 import Memoer from './component/Memoer'
+import UseRef from './component/UseRef';
+import ForwardRef from './component/ForwardRef'
+import ControlledComponent from './component/ControlledComponent'
+import UncontrolledComponent from './component/UncontrolledComponent'
 
 function App() {
   return (
@@ -74,13 +78,15 @@ function App() {
 
        <PureComp />                                  //check the chnge state and ten allows to render for class components
       
-      
-      <RefsDemo />  
+      <RefsDemo />                                   //class component chnages the DOM 
+      <UseRef />                                     //Hook in Functional Component
+      <ForwardRef />                                 //passing Ref to Child Component (Not recommended y react to use Refs beause it directly manipulates Dom and hence makes it Slow)
+      <ControlledComponent />                        //it will have an input field and are handelled by state (can be used in both class and functional Component)
+      <UncontrolledComponent />                      //the input feild is not handeledd by state (can be used in both class and functional Component)
 
        <FocusInput />
        <FRPInput />
       */}
-    
       
       
     </div>

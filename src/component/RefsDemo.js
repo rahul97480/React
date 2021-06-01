@@ -10,7 +10,7 @@ class RefsDemo extends Component {
     }
     componentDidMount() {
         this.inputRef.current.focus()
-        console.log(this.inputRef)
+        console.log(this.inputRef)           //outputs the dom can change the Dom but React suggest to minimize the use of Ref
     }
 
     clickHandler = () => {
