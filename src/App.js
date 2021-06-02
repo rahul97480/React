@@ -43,6 +43,7 @@ import User from './component/User'
 import GetApi from './component/GetApi'
 import PrevState from './component/PrevState'
 import PrevPropsParent from './component/PrevPropsParent'
+import First from './component/First'
 
 
 function App() {
@@ -102,9 +103,10 @@ function App() {
        <FRPInput />                                  //Focus Current Ref Input
       
        //Context Api and Custom Hooks
-      
+        <First />                                    //Provider and Consumer to state management (option of Props )
       
       */}
+
       
       
     </div>
