@@ -36,6 +36,14 @@ import UseRef from './component/UseRef';
 import ForwardRef from './component/ForwardRef'
 import ControlledComponent from './component/ControlledComponent'
 import UncontrolledComponent from './component/UncontrolledComponent'
+import HOC from './component/HOC'
+import Routings from './component/Routings'
+import ErrorPage from './component/ErrorPage'
+import User from './component/User'
+import GetApi from './component/GetApi'
+import PrevState from './component/PrevState'
+import PrevPropsParent from './component/PrevPropsParent'
+
 
 function App() {
   return (
@@ -64,11 +72,11 @@ function App() {
       <LifeCycle />                                   //Lifecycle 
       <Fragment />                                    //instead of div <> </>
       <Table />                                         
-      <ParentComp />                                  //Component did Mount  Lifecycle
+      <ParentComp />                                  //Component did Mount  Lifecycle(call Apis)
        <ParentComp />
        <CmpDidUpdate />                               //component did update
-       <Scupdate />                                   //Should component update          
-       <CwMount />                                    //cpomonent will unmount 
+       <Scupdate />                                   //Should component update(update the state on basis of condition)       
+       <CwMount />                                    //cpomonent will unmount(removes the component)
        
        HOOKS 
        <UseEffect />                                  //useEffect with state and props 
@@ -83,9 +91,19 @@ function App() {
       <ForwardRef />                                 //passing Ref to Child Component (Not recommended y react to use Refs beause it directly manipulates Dom and hence makes it Slow)
       <ControlledComponent />                        //it will have an input field and are handelled by state (can be used in both class and functional Component)
       <UncontrolledComponent />                      //the input feild is not handeledd by state (can be used in both class and functional Component)
+      <HOC >                                         //take props as input and returns a component
+      <ErrorPage />                                  //404 Page 
+      <User />                                       //Dynamic Routing
+      <GetApi />                                     //Api Get PUT Patch DELETE
+      <PrevState />                                   //To find the previous value of that state e.g prev value of counter
+      <PrevPropsParent />                            //Prev State 
 
-       <FocusInput />
-       <FRPInput />
+       <FocusInput />                                //Focust the Inpute Element in the form 
+       <FRPInput />                                  //Focus Current Ref Input
+      
+       //Context Api and Custom Hooks
+      
+      
       */}
       
       
